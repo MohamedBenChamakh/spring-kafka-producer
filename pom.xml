@@ -52,7 +52,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://192.168.224.154:10680/repository/maven-snapshots</url>
+            <url>http://192.168.224.154:10680/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
