@@ -52,7 +52,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://192.168.224.154:10680/repository/maven-snapshots/</url>
+            <url>http://172.17.0.1:10680/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -73,7 +73,7 @@
                 </executions>
                 <configuration>
                     <serverId>nexus</serverId>
-                    <nexusUrl>http://192.168.224.154:10680</nexusUrl>
+                    <nexusUrl>http://172.17.0.1:10680</nexusUrl>
                     <skipStaging>true</skipStaging>
                 </configuration>
             </plugin>
