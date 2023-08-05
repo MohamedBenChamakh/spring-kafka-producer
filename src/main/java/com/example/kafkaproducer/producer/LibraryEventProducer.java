@@ -27,7 +27,7 @@ public class LibraryEventProducer {
     }
 
     public CompletableFuture<SendResult<Integer, String>> sendLibraryEvent(LibraryEvent libraryEvent) throws JsonProcessingException {
-        Integer key = libraryEvent.libraryEventId();
+        Integer key = libraryEvent.getLibraryEventId();
         String value = objectMapper.writeValueAsString(libraryEvent);
 
        var completableFuture= kafkaTemplate.sendDefault(key,value);
