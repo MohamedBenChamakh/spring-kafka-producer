@@ -32,7 +32,7 @@ public class LibraryEventProducer {
 
        var completableFuture= kafkaTemplate.sendDefault(key,value);
 
-       return completableFuture.whenComplete((sendResult,throwable)->{
+       return completableFuture.completable().whenComplete((sendResult,throwable)->{
            if (throwable != null) {
                handleFailure(key, value, throwable);
            } else {
