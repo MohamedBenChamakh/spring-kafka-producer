@@ -52,7 +52,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://localhost:10680/content/repositories/snapshots</url>
+            <url>http://192.168.224.154:10680/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -73,7 +73,7 @@
                 </executions>
                 <configuration>
                     <serverId>nexus</serverId>
-                    <nexusUrl>http://localhost:10680</nexusUrl>
+                    <nexusUrl>http://192.168.224.154:10680</nexusUrl>
                     <skipStaging>true</skipStaging>
                 </configuration>
             </plugin>
